@@ -1,7 +1,0 @@
-D:\Проекты С\FinalGame\GameServer\FinalGame21\bin\Debug\FinalGame21.exe.config
-D:\Проекты С\FinalGame\GameServer\FinalGame21\bin\Debug\FinalGame21.exe
-D:\Проекты С\FinalGame\GameServer\FinalGame21\bin\Debug\FinalGame21.pdb
-D:\Проекты С\FinalGame\GameServer\FinalGame21\obj\Debug\FinalGame21.csprojAssemblyReference.cache
-D:\Проекты С\FinalGame\GameServer\FinalGame21\obj\Debug\FinalGame21.csproj.CoreCompileInputs.cache
-D:\Проекты С\FinalGame\GameServer\FinalGame21\obj\Debug\FinalGame21.exe
-D:\Проекты С\FinalGame\GameServer\FinalGame21\obj\Debug\FinalGame21.pdb

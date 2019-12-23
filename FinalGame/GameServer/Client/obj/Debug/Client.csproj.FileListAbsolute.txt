@@ -1,7 +1,0 @@
-D:\Проекты С\FinalGame\GameServer\Client\bin\Debug\Client.exe.config
-D:\Проекты С\FinalGame\GameServer\Client\bin\Debug\Client.exe
-D:\Проекты С\FinalGame\GameServer\Client\bin\Debug\Client.pdb
-D:\Проекты С\FinalGame\GameServer\Client\obj\Debug\Client.csprojAssemblyReference.cache
-D:\Проекты С\FinalGame\GameServer\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
-D:\Проекты С\FinalGame\GameServer\Client\obj\Debug\Client.exe
-D:\Проекты С\FinalGame\GameServer\Client\obj\Debug\Client.pdb
