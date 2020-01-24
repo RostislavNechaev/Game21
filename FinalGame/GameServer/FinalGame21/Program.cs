@@ -95,25 +95,14 @@ namespace FinalGame21
         List<string> COOF = new List<string>();
         public void Process()
         {
-
-
-
-            //game = new Game();
             newstream(Plr1, Plr2);
             string message1;
             string message2;
             byte[] data = new byte[64];
             message1 = "Игрок 1. Инструкция: Отправить 1 для подтверждения. 2 или другую клавишу для отказа";
-            //data = Encoding.Unicode.GetBytes(message);
-            //stream1.Write(data, 0, data.Length);
             message2 = "Игрок 2. Инструкция: Отправить 1 для подтверждения. 2 или другую клавишу для отказа";
-            //data = Encoding.Unicode.GetBytes(message2);
-            //stream2.Write(data, 0, data.Length);
             SendMes(message1, message2);
-            //Thread Game21Start = new Thread(new ThreadStart(game.StartGame));
-            //Game21Start.Start();
             string cardoff;
-
             message1 = "";
             message2 = "";
             pleer1.Clear();
@@ -133,7 +122,6 @@ namespace FinalGame21
                 int Mcard = rndb.Next(mast.Count);
                 string mst = mast[Mcard];
                 cardoff = Card + mst;
-                //Console.WriteLine("Random 1 test: {0} {1}", cardoff, COOF.Contains(cardoff));
                 if (!(COOF.Contains(cardoff)))
                 {
                     COOF.Add(cardoff);
@@ -299,8 +287,7 @@ namespace FinalGame21
                 Mcard = rndb.Next(mast.Count);
                 mst = mast[Mcard];
                 cardoff = Card + mst;
-                //Console.WriteLine("Random 2 test: {0} {1}", cardoff, COOF.Contains(cardoff));
-            } while (COOF.Contains(cardoff));
+                  } while (COOF.Contains(cardoff));
             COOF.Add(cardoff);
             if (a == 1)
             {
@@ -358,16 +345,14 @@ namespace FinalGame21
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex.Message);
-                data1 = Encoding.Unicode.GetBytes("Противник вышел");
+               data1 = Encoding.Unicode.GetBytes("Противник вышел");
                 try
                 {
                     stream1.Write(data1, 0, data1.Length);
                 }
                 catch (Exception ex2)
                 {
-                    //Console.WriteLine(ex2.Message);
-                    stream1.Close();
+                   stream1.Close();
                     Plr1.Close();
                 }
                 try
@@ -378,7 +363,7 @@ namespace FinalGame21
                 }
                 catch (Exception ex3)
                 {
-                    //Console.WriteLine(ex3.Message);
+                    
                 }
                 Disconnect();
             }
@@ -411,8 +396,6 @@ namespace FinalGame21
 
             catch (Exception ex)
             {
-                //Console.WriteLine(ex.Message);
-                //Console.WriteLine("Error 1");
                 message1 = "Противник вышел";
                 SendMes(message1, message1);
                 Disconnect();
@@ -451,8 +434,6 @@ namespace FinalGame21
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex.Message);
-                //Console.WriteLine("Error 2");
                 message1 = "Противник вышел";
                 SendMes(message1, message1);
                 Disconnect();

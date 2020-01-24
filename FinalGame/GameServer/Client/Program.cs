@@ -58,7 +58,7 @@ namespace ChatClient
             {
                 try
                 {
-                    byte[] data = new byte[64]; // буфер для получаемых данных
+                    byte[] data = new byte[64]; 
                     StringBuilder builder = new StringBuilder();
                     int bytes = 0;
                     do
@@ -69,7 +69,7 @@ namespace ChatClient
                     while (stream.DataAvailable);
                     string message = builder.ToString();
 
-                    Console.WriteLine(message);//вывод сообщения
+                    Console.WriteLine(message);
                     if (message == "Противник вышел")
                     {
                        
@@ -78,7 +78,7 @@ namespace ChatClient
                 }
                 catch
                 {
-                    Console.WriteLine("Подключение прервано!"); //соединение было прервано
+                    Console.WriteLine("Подключение прервано!"); 
                     Console.ReadLine();
                     Disconnect();
                 }
@@ -90,11 +90,11 @@ namespace ChatClient
 
             Console.ReadLine();
             if (stream != null)
-                stream.Close();//отключение потока
+                stream.Close();
             if (client != null)
-                client.Close();//отключение клиента
+                client.Close();
             Console.ReadLine();
-            Environment.Exit(0); //завершение процесса
+            Environment.Exit(0);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Test
         [TestMethod]
         public void TestMethod1()
         {
-            // Arrange
+            
             TcpListener tcpListener;
             tcpListener = new TcpListener(IPAddress.Any, 8888);
             tcpListener.Start();
@@ -24,10 +24,8 @@ namespace Test
             string message = "2";
             string mass = "Больше";
             string returnmess;
-            // Act
-            returnmess = TestGame1.morethan21(mass);
-            // Assert
-            Assert.AreEqual(message, returnmess, "Сообение отправлено.Код получен");
+                      returnmess = TestGame1.morethan21(mass);
+                      Assert.AreEqual(message, returnmess, "Сообение отправлено.Код получен");
         }
     }
 }
